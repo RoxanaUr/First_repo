@@ -1,24 +1,25 @@
 """
 Exceptii:
-clase speciale Python folosite at cand ceva nu merge bine in cod
+Clase speciale Python folosite atunci cand ceva nu merge bine in cod.
 Folosim mecanismul try-except pt a gestiona posibilele exceptii aparute
 in cod, astfel incat programul sa NU se opreasca.
 
 try:
     incercam ceva aici
     care s-ar putea sa dea exceptie
-excepti NumeExceptie as e:
+except NumeExceptie as e:
     aici gestionam exceptia cum consideram noi
 """
 
 l = [1, 2, 3, 4]
 print(l[0])
-# daca as decomenta codul de mai jos, codul s ar opri cu eroare
+# daca as decomenta linia de mai jos, codul s ar opri cu eroare
 # print(l[220])
 try:
     print(l[5])
 except IndexError as e:
     print("Am dat de o eroare de tipul IndexError")
+    print(e)
 
 """
 Unde am putea folosi try-except:
@@ -35,7 +36,7 @@ Unde am putea folosi try-except:
 
 """
 Reguli pt prinderea exceptiilor:
-- avem mereu un singur try, dar putem avea mai multe exept
+- avem mereu un singur try, dar putem avea mai multe except
 - daca avem mai multe exceptii posibile, trebuie sa le punem de la
 cea mai specifica la cea mai generica
 - la final, putem avea inclusiv un except "gol", care sa
