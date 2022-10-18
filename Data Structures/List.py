@@ -67,6 +67,7 @@ lz = lx + ly
 print(lz) # se alatura cele 2 liste
 print(f"LX: {lx}\nLY: {ly}")
 print(lz)
+print()
 
 
 

@@ -71,3 +71,5 @@ del tren_colorat['roz'] # sterge elementul unde gaseste cheia roz
 
 # Modificare
 tren_colorat['rosu'] = "pietre"
+
+print()
